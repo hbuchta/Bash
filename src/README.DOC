@@ -1,0 +1,265 @@
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º                              B A S H                                        º
+º                  (c) Hilmar Buchta & Jan Smolczyk                           º
+º                                                                             º
+º                        Version 1.0 Feb. 1995                                º
+º                                                                             º
+º       Hilmar Buchta        :  game programming and level design             º
+º       Jan Smolczyk         :  graphical art and level design                º
+º                                                                             º
+º     very special thanks to Kris Arndt for help on programming the VGA       º
+º                                                                             º
+º     Beta-testing and quality assurance: (in alphabetical order)             º
+º      Kris Arndt * Maria Bartual * Dagmar Behmer * Guido Eickvonder          º
+º      Ulrich Petrikowsky * Ina Puender                                       º
+º                                                                             º
+ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+º This software is freeware:                                                  º
+º  don't register, don't pay, just play and have fun !!                       º
+º You may copy this program for whomever you like as long as you are copying  º
+º the whole package, i.e. together with this readme-file.                     º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Part 1  :       Overview                                                   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+This game includes the following files
+
+bash.exe      -   the game itself
+bash.res      -   bitmaps & level information for bash.exe
+readme.doc    -   this text file
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Part 2  :       Installation and hardware requirement                      ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+BASH requires
+ ş  Intel 80286 IBM compatible with MS-DOS Version 4.0 and above
+ ş  Color VGA with color VGA monitor
+ ş  100 KB of free conventional ram memory (below 640K).
+
+ Joystick is supported
+
+
+Files required for playing BASH:
+
+bash.exe    -   the game itself
+bash.res    -   bitmaps & level information for BASH
+
+Saved game positions are stored in the files
+
+    savegame.1, savegame.2, ... ,savegame.8
+
+These files have to be in the same directory as bash.exe/bash.res.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Part 3  :       How to play                                                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Game select
+===========
+ Up&Down Arrow/      : Move marker from game to game
+ Joystick up/down
+ ENTER/ Fire 1 button: Choose game to play. Note that you can only play
+                       games whose name isn't displayed in dark green.
+ ESC                 : Exit to DOS
+ L                   : Load a previously saved gamed position
+ S                   : Save current game position
+ F1                  : Help screen
+ F2                  : Toggle Sound
+
+ NOTE: You do have eight "slots" for saving your game positions to. These
+       slots correspond to the eight filenames savegame.1, savegame.2, ...
+       savegame.8. You can free one slot simply by deleting the appropriate
+       file, for example
+         del savegame.4       (from DOS-prompt)
+       would free the 4th slot.
+       You can move a savegame from one slot to another by renaming it, for
+       example
+         ren savegame.2 savegame.5
+       would move the second slotentry to the fifth. This may be useful if
+       you want to exchange savegames with a friend.
+
+
+
+
+Keyboard controls during the game
+=================================
+ Arrow-keys          : move the player
+ CTRL+arrow-keys     : dig into the specified directions without changing
+                       the players position
+ ESC                 : cancel the actual game
+ SPACE               : Game pause
+
+Joystick controls during the game
+=================================
+ move stick into either direction in order to move (what have you guessed?)
+ Hold Fire 2 button and move to dig into the specified directions without
+ changing your position.
+
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Part 4  :       Trouble shooting & contacting the author                   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Problems with the joystick
+ If the player sometimes still moves although the button 2 is pressed
+ you probably have a joystick with auto-fire. Usually there is a switch
+ to turn this off...
+
+Playing BASH when Windows is running
+ You may run BASH fullscreen in Windows but on my slow PC scrolling is not
+ that smooth when Windows is active and when the DOS-task is running in the
+ background. If you have the same problem close Windows and try playing
+ BASH again.
+
+If you run into trouble please consider that I have only tested the game on
+a limited number of computers. I just don't have enough money to by all
+types of VGA-cards in order to test if my game works with them. The same
+thing holds for operating systems, bus-systems and joysticks.
+
+One great problem may be the speed of your computer. I developed BASH
+on a 386/40 and it was fast enough. I haven't found a slower PC around here
+so I cannot say if it works on slower PCs. If your computer is slower the
+graphics may be not that smooth.
+
+If you have any questions, suggestions, comments or if you just want to
+chat, please write to:
+
+      Hilmar Buchta
+      Kampstr. 16
+      47228 Duisburg
+      Germany
+
+      Internet: hilmar@fact.rhein-ruhr.de
+      FIDO    : Hilmar Buchta@2:2448/2026.2
+
+All bitmaps were drawn by Jan Smolczyk. His address is:
+
+      Jan Smolczyk
+      Otto Lenz Str. 13
+      47226 Duisburg
+      Germany
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Part 5  :       Designing your own levels                                  ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Designing your own levels is a bit complicated since I haven't written a
+level editor yet. So what you have to do is to write an ascii-File (in any
+ascii-editor you like) that describes the level in the following way:
+
+The level-file must be a collection of blocks. Each block has the following
+appearance:
+
+1.   Name of the level - a '*' sign at the beginning denotes a level that
+     is directly playable when you enter the game.
+2.   Time in seconds
+3.   Number of diamonds needed (-1 for all)
+4.   Level-data
+5.   Endmark @
+
+No blank lines are allowed! Not even at the end of the file...
+
+The following characters are allowed in the level data block:
+
+ x        solid wall (cannot be destroyed)
+ -        nonsolid wall (can be destroyed by explosion)
+ S        start-position of the player
+ E        exit
+ blank    empty position
+ .        earth
+ *        diamond
+ o        stone
+ U        clock
+ B        bomb
+ 1,2,3,4  monster - the number represents the direction the monster is
+          moving at start: 1=left, 2=down, 3=right, 4=up
+ 5,6,7,8  like the above, but these monsters are converted to diamonds when
+          they are destroyed
+ :        background bitmap - use this to fill up non-rectangular
+          playfields.
+
+Example:
+
+*Intro                            ³ Name of first level is 'Intro'
+600                               ³ 600 seconds=6 minutes time
+-1                                ³ needed-gems: collect all
+xxxxxxxxxxxxxxxxxxx               ³ playfield - data
+x. *o   ....   ooox               ³
+x.o.oo ....  o ..*x               ³ the * in the name *Intro tells the
+xSoo ooo* o ox  .*x               ³ program that this level is directly
+xxxxxxxxxxxxxx   *x               ³ accessable
+xo.  ...ox*...  .*x               ³
+xo*... .ox..*. ..*x               ³
+xo.  .    ....  .*x               ³
+xE  ... *x*.*.   *x               ³
+xxxxxxxxxxxxxxxxxxx               ³
+@                                 ³ <-- don't forget the end mark
+Castles                           ³ Name of the second level
+240                               ³ Time
+10                                ³ 10 diamonds needed
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ³
+x  3         3        3         x ³ Level-data
+x ....   ...................... x ³
+x .*..   .xxxxxxxxxxxxxxxxxxxx. x ³ Since there is not * in front of the
+x4....   .xo...*....xoooo...ox. x ³ levelname, the player must solve the
+x ....   .x.....*...x......oox. x ³ first level before he can start with
+x ..*.  4..........oo......oox.2x ³ this one
+x .S..   .xoo.....o.x.o.....ox. x ³
+x ....2  .xoo.......x.o....oox. x ³
+x ....   .x*........x..o..oo.x. x ³
+x .*..   .xxxxxxxxxxxxx.xxxxxx. x ³
+x ....  4.x*********xoo...oo.x. x ³
+x4....   .x*oo...o.*x*o....oox. x ³
+x ....   .x*o....o.*x*o......x.2x ³
+x ..*.2  .x*o...ooo*xooo..oo.x. x ³
+x ....   .x***********....ooox. x ³
+x ....  4.xxxxxxx.xxxxxxxxxxxx. x ³
+x ....   .x...  o.x............ x ³
+x  1     .xE..oo.ox      1      x ³
+xxxxxxxx  xxxxxxxxx  xxxxxxxxxxxx ³
+:::::::x             x::::::::::: ³
+:::::::xxxxxxxxxxxxxxx::::::::::: ³
+@                                 ³ <-- don't forget the end mark, even at
+                                        end of the file !!
+
+Remember: no blank lines (make sure there are none at the end of the file)
+
+Possible error messages during level loading:
+
+unreadable timer value:
+ There is no number at the position for the time
+
+number of diamonds unknown:
+ There is no number at the position for the diamonds
+
+level too large:
+ There are more then 50 lines in one level. You probably have forgotten
+ an end sign
+
+player start position not found:
+ you have forgotten an 'S' indicating the player's start position in the
+ level above the specified line.
+
+Ok, this is not at all comfortable but it still has some advantages:
+levels can be easily reorderd or copied using your text-editor. The ascii
+format is also good for sending levels as email.
+
+After you have written your level-file, say 'levels.dat', you may start
+BASH with
+
+ bash levels.dat
+
+This will load the additional levels at the end of the existing ones.
+Remember to put a '*' in front of the first level-name in your level-file,
+if you want to make this level playable.

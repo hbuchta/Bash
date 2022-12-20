@@ -1,0 +1,1020 @@
+*Sokoban-Level
+1000
+-1
+                   
+          XXXX     
+     XXXX X  X     
+   XXX  XXXV X     
+  XX   S  V  X     
+ XX  V VVXX XX     
+ X  XVXX     X     
+ X X V VV X XXX    
+ X   V X  X V XXXXX
+XXXX    X  VV X   X
+XXXX XX V         X
+XW    XXX  XXXXXXXX
+XWW WWX XXXX       
+XWWWXWX            
+XWWWWWX            
+XXXXXXX            
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+                   
+ XXXXXXXXXXXXXXXX  
+ X              X  
+ X X XXXXXX     X  
+ X X  V V V VX  X  
+ X X   VSV   XX XX 
+ X X XV V VXXXWWWX 
+ X X   V V  XXWWWX 
+ X XXXVVV V XXWWWX 
+ X     X XX XXWWWX 
+ XXXXX   XX XXWWWX 
+     XXXXX     XXX 
+         X     X   
+         XXXXXXX   
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+   XXXXXXXXX       
+  XX   XX  XXXXX   
+XXX     X  X    XXX
+X  V XV X  X  WWW X
+X X VXSVXX X XWXW X
+X  X XV  X    W W X
+X V    V X X XWXW X
+X   XX  XXV V W W X
+X V X   X  XVXWXW X
+XX V  V   V  VWWW X
+ XV XXXXXX    XX  X
+ X  X    XXXXXXXXXX
+ XXXX              
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+        XXXXXXX    
+  XXXXXXX     X    
+  X     X VSV X    
+  XVV X   XXXXXXXXX
+  X XXXWWWWWWXX   X
+  X   VWWWWWWXX X X
+  X XXXWWWWWW     X
+ XX   XXXX XXX XVXX
+ X  XV   X  V  X X 
+ X  V VVV  X VXX X 
+ X   V V XXXVV X X 
+ XXXXX     V   X X 
+     XXX XXX   X X 
+       X     X   X 
+       XXXXXXXX  X 
+              XXXX 
+@
+*Sokoban-Level
+1000
+-1
+     XXXXXXX       
+    X   X  X       
+    X  V   X       
+  XXX XV   XXXX    
+  X  V  XXV   X    
+  X  X S V X VX    
+  X  X      V XXXX 
+  XX XXXXVXX     X 
+  X VXWWWWWX X   X 
+  X  VWWW VX XXX 
+ XX  XWWWWWX   X   
+ X   XXX XXXXXXX   
+ X VV  X  X        
+ X  X     X        
+ XXXXXX   X        
+      XXXXX        
+@
+*Sokoban-Level
+1000
+-1
+
+  XXXXX            
+  X   XX           
+  X    X  XXXX     
+  X V  XXXX  X     
+  X  VV V   VX     
+  XXXS XV    XX    
+   X  XX  V V XX   
+   X V  XX XX WX   
+   X  XVXXV  XWX   
+   XXX   VWWXXWX   
+    X    XWWWWX   
+    X VV XWWWWWX   
+    X  XXXXXXXXX   
+    X  X           
+    XXXX           
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+     XXXXXXXXXX    
+     XWW  X   X    
+     XWW      X    
+     XWW  X  XXXX  
+    XXXXXXX  X  XX 
+    X            X 
+    X  X  XX  X  X 
+  XXXX XX  XXXX XX 
+  X  V  XXXXX X  X 
+  X X V  V  X V  X 
+  X SV  V   X   XX 
+  XXXX XX XXXXXXX  
+     X    X        
+     XXXXXX        
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+     XXXXXXXXXXX   
+     X  W  X   X   
+     X XW    S X   
+ XXXXX XXWWX XXXX  
+XX  X WWXXX     XXX
+X V XWWW   V X  V X
+X    WW XX  XX XX X
+XXXXVXXVX V X   X X
+  XX X    XV VV X X
+  X  V X X  X VXX X
+  X               X
+  X  XXXXXXXXXXX  X
+  XXXX         XXXX
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+  XXXXXX           
+  X   SXXXX        
+XXXXX V   X        
+X   XX    XXXX     
+X V X  XX    X     
+X V X  XXXXX X     
+XX V  V    X X     
+XX V V XXX X X     
+XX X  V  X X X     
+XX X XVX   X X     
+XX XXX   X X XXXXXX
+X  V  XXXX X XWWWWX
+X    V    V   WWXWX
+XXXXV  VX V   WWWWX
+X       X  XX WWWWX
+XXXXXXXXXXXXXXXXXXX
+@
+*Sokoban-Level
+1000
+-1
+
+    XXXXXXXXXX     
+XXXXX        XXXX  
+X     X   V  XS X  
+X XXXXXXXVXXXX  XXX
+X X    XX X  XV WWX
+X X V  V  X  X  XWX
+X X V  X     XV WWX
+X X  XXX XX     XWX
+X XXX  X  X  XV WWX
+X X    X VXXXX  XWX
+X XV   V  V  X WWX
+X    V X V V X  XWX
+XXXX VXXX    X WWX
+   X    VV XXXWWWWX
+   X      XX XXXXXX
+   XXXXXXXX        
+@
+*Sokoban-Level
+1000
+-1
+  XXXXXXXXX        
+  X       X        
+  X       XXXX     
+  XX XXXX X  X     
+  XX XSXX    X     
+  X VVV V  VVX     
+  X  X XX V  X     
+  X  X XX  V XXXX  
+  XXXX  VVV VX  X  
+   X   XX   WWWWX  
+   X X   X XWW WX  
+   X   X X XXWWWX  
+   XXXXX V  XWWWX  
+       XX   XXXXX  
+        XXXXX      
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+XXXXX      XXXX    
+X    XXXXXXX  XXXXX
+X   VX  X  V  X   X
+X  V  V  V X V V  X
+XXV V   X SX V    X
+X  V XXXXXXXXXXX XX
+X X   XWWWWWWWX VX 
+X XX  X WWWWWWX  X 
+X X   VWWWWWWWWV X 
+X X V XWWWW WWX  X 
+X  V VXXXXVXXXX VX 
+X V   XXX V   V  XX
+X V     V V  V    X
+XX XXXXXX V XXXXX X
+X         X       X
+XXXXXXXXXXXXXXXXXXX
+@
+*Sokoban-Level
+1000
+-1
+                   
+    XXXXXXX        
+    X  X  XXXX     
+XXXXX VXV X  XX    
+XWW X  X  X   X    
+XWW X VXV X  VXXXX 
+XW  X     XV  X  X 
+XWW   VX  X V    X 
+XWWSX  XV XV  X  X 
+XWW X VX     VX  X 
+XWW X  XVVXV  X  XX
+XWW X VX  X  VXV  X
+XWW X  X  X   X   X
+XXW XXXX  XXXXX   X
+ XXXX  XXXX   XXXXX
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+XXXXXXXXXXXXXXX    
+XWWWWWWWWWW  WXXXX 
+XWWWWWWWWWWVVWX  X 
+XXXXXXXXXXXV X   XX
+X      V  V     V X
+XX XXXX   X  V X  X
+X      X   XX  X XX
+X  VX  X XX  XXX XX
+X V XVXXX    XXX XX
+XXX  V X  X  XXX XX
+XXX    V XX X  X XX
+ X V  X  V  V V   X
+ X  V  VXVVV  X   X
+ X  X  V      XXXXX
+ X SXX  X  X  X    
+ XXXXXXXXXXXXXX    
+@
+*Sokoban-Level
+1000
+-1
+XXXX               
+X  XXXXXXXXXXXXXX  
+X  X   WWXWWWWWWX  
+X  X X XXXXX WWWX  
+XXVX    WWWWWWWWX  
+X   XXVXXXXXX  XXXX
+X V X     XXXXXXS X
+XXV X V   XXXXXX  X
+X  V XVVVXX       X
+X      X    XVXVXXX
+X XXXX XVVVVV    X 
+X X    V     X   X 
+X X   XX XX     XXX
+X XXXXXXVXXXXXX V X
+X        X    X   X
+XXXXXXXXXX    XXXXX
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+                   
+                   
+    XXXXXXX        
+    X  X  XXXXX    
+   XX  X  XWWWXXX  
+   X  VX  XWWW  X  
+   X V XVV WWW  X  
+   X  VX  XWWW WX  
+   X   X VXXXXXXXX 
+   XXV       V V X 
+   XX  X  VV X   X 
+    XXXXXX  XXVVSX 
+         X      XX 
+         XXXXXXXX  
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+ XXXXXXXXXXXXXXXXX 
+ XWWW   X    X   XX
+XXWWWWW  VXX X XV X
+XWWWWWWX  V  X    X
+XWWWWWWX  X  X X  X
+XXXXXXXXX V  V V  X
+  X     XVXXV XXVXX
+ XX   V    X V    X
+ X  XX XXX X  XXV X
+ X V VV     V  V  X
+ X V    VXXV XXXXXX
+ XXXXXXX  S XX     
+       XXXXXX      
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+          XXXXX    
+      XXXXX   X    
+     XX V  V  XXXX 
+ XXXXX V  V V XXWX 
+ X       VV  XXWWX 
+ X  XXXXXX XXXWW X 
+ XX X  X    XWWW X 
+ X V   X    XWWW X 
+ XS XV XX XXXXWWWX 
+ XXXX  V VV  XXWWX 
+    XX  V V  VWWWX 
+     X VV  V X  WX 
+     X   V V  XXXX 
+     XXXXXX   X    
+          XXXXX    
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+XXXXX              
+X   XX             
+X V  XXXXXXXXX     
+XX X X       XXXXXX
+XX X   VXVXS  X   X
+X  X      V X   V X
+X  XXX XXXXXXXXX XX
+X  XX WWWWWWW X XX
+XX XX WWWW X XX
+X VXXXXXXXXXX XXV X
+X  V   V  V    V  X
+X  X   X   X   X  X
+XXXXXXXXXXXXXXXXXXX
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+       XXXXXXXXXXX 
+       X   X     X 
+XXXXX  X     V V X 
+X   XXXXX VXX X XX 
+X V XX   X XX V  X 
+X V  SVV X XXVVV X 
+XX XXX   X XX    X 
+XX X   XXX XXXXXVX 
+XX X     V  XWWWWX 
+X  XXX XX V XWWWWXX
+X V   V X   XWWVW X
+X  XX V X  XXWWWW X
+XXXXX   XXXXXXWWWXX
+    XXXXX    XXXXX 
+                   
+@
+*Sokoban-Level
+1000
+-1
+   XXXX            
+   X  XXXXXXXXX    
+  XX  XX  X   X    
+  X  VX VSV   XXXX 
+  XV  V  X V VX  XX
+ XX  VXX XV V     X
+ X  X  X X   VVV  X
+ X V    V  VXX XXXX
+ X V V XVX  X  X   
+ XX  XXX  XXXV X   
+  X  XWWWW     X   
+  XXXXWWWWWWXXXX   
+    XWWWWXXXX      
+    XWWWXX         
+    XWWWX          
+    XXXXX          
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+         XXXX      
+     XXXXX  X      
+    XX     VX      
+   XX V  XX XXX    
+   XSV V X V  X    
+   XXXX XX   VX    
+    XWWWWXV V X    
+    XWWWWX   VX    
+    XWWWW  VV XX   
+    XWWW X V   X   
+    XXXXXXV V  X   
+         X   XXX   
+         XV XXX    
+         X  X      
+         XXXX      
+@
+*Sokoban-Level
+1000
+-1
+                   
+   XXXXXXXXXXXX    
+   XX     XX  X    
+   XX   V   V X    
+   XXXX XX VV X    
+   X   V X    X    
+   X VVV X XXXX    
+   X   X X V XX    
+   X  X  X  V X    
+   X VX VX    X    
+   X   WWX XXXX    
+   XXXXWW V XSX    
+   XWWWWWX VX X    
+   XXWWWWX  V X    
+   XXXWWXX    X    
+   XXXXXXXXXXXX    
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+    XXXXXXXXX      
+    XWWWW   XX     
+    XWXWX  V XX    
+   XXWWWWX X SXX   
+   X WWWWX  X  XX  
+   X     XV XXV X  
+   XX XXX  V    X  
+    XV  V V VX  X  
+    X X  V V XX X  
+    X  XXX  XX  X  
+    X    XX XX XX  
+    X  V X  V  X   
+    XXXV V   XXX   
+      X  XXXXX     
+      XXXX         
+@
+*Sokoban-Level
+1000
+-1
+XXXXXXXXXXXX XXXXXX
+X   X    X XXXWWWWX
+X   VVX   S  WWWWWX
+X   X XXX   X WWWWX
+XX XX XXX  X  WWWWX
+ X V V     X X XXXX
+ X  V VXX  X      X
+XXXX X  XXXX X XX X
+X  X XV   XX X    X
+X V  V  X XX X   XX
+X X V V    X X   X 
+X  V XX XX X XXXXX 
+X VV     VV  X     
+XX XX XXX V  X     
+ X    X X    X     
+ XXXXXX XXXXXX     
+@
+*Sokoban-Level
+1000
+-1
+
+            XXXXX  
+XXXXX  XXXXXX   X  
+X   XXXX  V V V X  
+X V   XX XX XX  XX 
+X   V V     V  V X 
+XXX V  XX XX     XX
+  X XXXXX XXXXXVV X
+ XXVXXXXX SXX     X
+ X V  XXXVXXX V  XX
+ X V  X   XXX  XXX 
+ X VV V X   VV X   
+ X     X   XX  X   
+ XXXXXXXWW WXXX    
+    XWWWWWWWWWX    
+    XWWWWWWWWWX    
+    XXXXXXXXXXX    
+@
+*Sokoban-Level
+1000
+-1
+XXXXXXXXXXX        
+XWWWWWW   XXXXXXXXX
+XWWWWWW   X  XX   X
+XWWXXX V    V     X
+XWWW V V X  XXX   X
+XWWWXVXXXXX    X  X
+XXX    X   XV  XV X
+  X  VV V V  VXX  X
+  X  V   XVXV XXV X
+  XXX XX X    XX  X
+   X  V V XX XXXXXX
+   X    V  V  X    
+   XX   X X   X    
+    XXXXXSXXXXX    
+        XXX        
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+                   
+          XXXX     
+    XXXXXXX SX     
+    X     V  X     
+    X   VXX VX     
+    XXVXWWWX X     
+     X VWWW  X     
+     X XW WX XX    
+     X   X XV X    
+     XV  V    X    
+     X  XXXXXXX    
+     XXXX          
+                   
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+             XXXXXX
+ XXXXXXXXXXXXXWWWWX
+XX   XX     XXWWWWX
+X  VVXX  V SXXWWWWX
+X      VV VX  WWWWX
+X  V XX VV X X WWWX
+X  V XX V  X  WWWWX
+XX XXXXX XXX XXWXXX
+XX   V  V XX   W  X
+X VXXX  X XXXXX XXX
+X   V   X       X  
+X  V XV V VXXX  X  
+X VVVX V   X XXXX  
+X    X  VV X       
+XXXXXX   XXX       
+     XXXXX         
+@
+*Sokoban-Level
+1000
+-1
+
+     XXXXXXXXXXXX  
+     X          XX 
+     X  X XVV V  X 
+     XV XVX  XX SX 
+    XX XX X V X XX 
+    X   V XV  X X  
+    X   X V   X X  
+    XX V V   XX X  
+    X  X  XX  V X  
+    X    XX VVX X  
+ XXXXXXVV   X   X  
+ XWWWWX  XXXXXXXX  
+ XWXWWW XX         
+ XWWWW   X         
+ XWWWW   X         
+ XXXXXXXXX         
+@
+*Sokoban-Level
+1000
+-1
+           XXXXX   
+          XX   XX  
+         XX     X  
+        XX  VV  X  
+       XX VV  V X  
+       X V    V X  
+XXXX   X   VV XXXXX
+X  XXXXXXXX XX    X
+XW            VVVSX
+XWX XXXXXXX XX   XX
+XWX XXXXXXXW XV VXX
+XWWWWWWWWWWW X    X
+XXXXXXXXXXXXXX  V X
+             XX  XX
+              XXXX 
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+      XXXXXXXX     
+   XXXX      XXXXXX
+   X    XX V V   SX
+   X XX XXVXV V VXX
+ XXX WWWWWWX  VV XX
+ X   WWWWWWX  X   X
+ X X WWWWWWXV  V  X
+ X X WWWWWW VVX V X
+ X  VXXX XXXV  V XX
+ XXX  V  V  V  V X 
+   X  V  V  V  V X 
+   XXXXXX   XXXXXX 
+        XXXXX      
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+                   
+        XXXXXXX    
+    XXXXX  X  XXXX 
+    X   X   V    X 
+ XXXX XVV XX XX  X 
+XX      X X  XX XXX
+X  XXX VXV  V  V  X
+XWWW    X XX  X   X
+XWWWX    S X XXX XX
+XWWWX  XXX  V  V  X
+XXXXXXXX XX   X   X
+          XXXXXXXXX
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+ XXXXX             
+ X   X             
+ X X XXXXXXX       
+ X      VSXXXXXX   
+ X V XXV XXX   X   
+ X XXXX V    V X   
+ X XXXXX X  XV XXXX
+XX  XXXX XXV      X
+X  VX  V  X XX XX X
+X         X XWWWX X
+XXXXXX  XXX  WWW  X
+     XXXX X XWWWX X
+          X XXX X X
+          X       X
+          XXXXXXXXX
+@
+*Sokoban-Level
+1000
+-1
+                   
+  XXXXX XXXX       
+  XWWWX X  XXXX    
+  XWWWXXX  V  X    
+  XWWWWXX V  VXXX  
+  XXWWWWXX   V  X  
+  XXXWWW XX V V X  
+  X XX    X  V  X  
+  X  XX X XXX XXXX 
+  X V X XV  V    X 
+  X  V S V    V  X 
+  X   X V VV V XXX 
+  X  XXXXXX  XXX   
+  X XX    XXXX     
+  XXX              
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+   XXXXXXXXXX      
+   X        XXXX   
+   X XXXXXX X  XX  
+   X X V V V  V X  
+   X       XV   X  
+   XXXV  VVX  XXX  
+     X  XX X VXX   
+     XXVX   V SX   
+      X  V V XXX   
+      X X   V  X   
+      X XX   X X   
+     XX  XXXXX X   
+     X         X   
+     XWWWWWWWXXX   
+     XWWWWWWWX     
+     XXXXXXXXX     
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+          XXXX     
+  XXXXXXXXX  XX    
+ XX  V      V XXXXX
+ X   XX XX   XXWWWX
+ X XVV V VVXVXXWWWX
+ X X    S  X   WWWX
+ X  VX XXXVV   WWWX
+ X V  VV  V XXWWWWX
+ XXXV       XXXXXXX
+   X  XXXXXXX      
+   XXXX            
+                   
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+     XXXXXXXXX     
+     XWXWX     
+     XWWWWX     
+     XWWWX     
+     XWWWWX     
+     XWWWX     
+     XXX   XXX     
+       X   X       
+   XXXXXX XXXXXX   
+   X           X   
+   X V V V V V X   
+   XX V V V V XX   
+    XV V V V VX    
+    X   VSV   X    
+    X  XXXXX  X    
+    XXXX   XXXX    
+@
+*Sokoban-Level
+1000
+-1
+                   
+         XXXX      
+         X  XX     
+         X   XX    
+         X VV XX   
+       XXXV  V XX  
+    XXXX    V   X  
+  XXX  X XXXXX  X  
+  X    X XWWWWV X  
+  X X   V WWWWX X  
+  X  V X XWWWX X  
+  XXX  XXXX XXX X  
+    XXXX SV  XXVXX 
+       XXX V     X 
+         X  XX   X 
+         XXXXXXXXX 
+@
+*Sokoban-Level
+1000
+-1
+
+      XXXXXXXXXXXX 
+     XXWW    X   X 
+    XXWW V    V X 
+   XXWWWX X XV XX 
+   XWWWX X X V  X 
+XXXXWWWX  X    X X 
+X  XX X          X 
+X SV V XXX  X X XX 
+X V   V   X X   X  
+XXXVV   X X X X X  
+  X   V   X X XXXXX
+  X VX XXXXX      X
+  XV   X   X   X  X
+  X  XXX   XX     X
+  X  X      X    XX
+  XXXX      XXXXXX 
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+                   
+    XXXXX          
+    X   X          
+    XV  X          
+  XXX  VXX         
+  X  V V X         
+XXX X XX X   XXXXXX
+X   X XX XXXXX  WWX
+X V  V          WWX
+XXXXX XXX XSXX  WWX
+    X     XXXXXXXXX
+    XXXXXXX        
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+                   
+                   
+                   
+   XXXXXXXXXXXX    
+   XWW  X     XXX  
+   XWW  X V  V  X  
+   XWW  XVXXXX  X  
+   XWW    S XX  X  
+   XWW  X X  V XX  
+   XXXXXX XXV V X  
+     X V  V V V X  
+     X    X     X  
+     XXXXXXXXXXXX  
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+                   
+                   
+         XXXXXXXX  
+         X     SX  
+         X VXV XX  
+         X V  VX   
+         XXV V X   
+ XXXXXXXXX V X XXX 
+ XWWWW  XX V  V  X 
+ XXWWW    V  V   X 
+ XWWWW  XXXXXXXXXX 
+ XXXXXXXX          
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+           XXXXXXXX
+           X  WWWWX
+XXXXXXXXXXXX  WWWWX
+X    X  V V   WWWWX
+X VVVXV  V X  WWWWX
+X  V     V X  WWWWX
+X VV XV V VXXXXXXXX
+X  V X     X       
+XX XXXXXXXXX       
+X    X    XX       
+X     V   XX       
+X  VVXVV  SX       
+X    X    XX       
+XXXXXXXXXXX        
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+           XXXXXXX 
+           X  WWWX 
+       XXXXX  WWWX 
+       X      W WX 
+       X  XX  WWWX 
+       XX XX  WWWX 
+      XXX XXXXXXXX 
+      X VVV XX     
+  XXXXX  V V XXXXX 
+ XX   XV V   X   X 
+ XS V  V    V  V X 
+ XXXXXX VV V XXXXX 
+      X      X     
+      XXXXXXXX     
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+ XXX  XXXXXXXXXXXXX
+XXSXXXX       X   X
+X VV   VV  V V WWWX
+X  VVVX    V  XWWWX
+X V   X VV VV XWWWX
+XXX   X  V    XWWWX
+X     X V V V XWWWX
+X    XXXXXX XXXWWWX
+XX X  X  V V  XWWWX
+X  XX X VV V VXXWWX
+X WWX X  V      XWX
+X WWX X VVV VVV XWX
+XXXXX X       X XWX
+    X XXXXXXXXX XWX
+    X           XWX
+    XXXXXXXXXXXXXXX
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+         XXXXX     
+         X   XXXXX 
+         X XVXX  X 
+         X     V X 
+ XXXXXXXXX XXX   X 
+ XWWWW  XX V  VXXX 
+ XWWWW    V VV XX  
+ XWWWW  XXV  V SX  
+ XXXXXXXXX  V  XX  
+         X V V  X  
+         XXX XX X  
+           X    X  
+           XXXXXX  
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+                   
+                   
+                   
+    XXXXXX  XXX    
+    XWW  X XXSXX   
+    XWW  XXX   X   
+    XWW     VV X   
+    XWW  X X V X   
+    XWWXXX X V X   
+    XXXX V XV  X   
+       X  VX V X   
+       X V  V  X   
+       X  XX   X   
+       XXXXXXXXX   
+                   
+                   
+@
+*Sokoban-Level
+1000
+-1
+                   
+                   
+                   
+           XXXXX   
+     XXXXXXX   XX  
+    XX X SXX VV X  
+    X    V      X  
+    X  V  XXX   X  
+    XXX XXXXXVXXX  
+    X V  XXX WWX   
+    X V V V WWWX   
+    X    XXXWWWX   
+    X VV X XWWWX   
+    X  XXX XXXXX   
+    XXXX           
+                   
+@
+*Sokoban-Level
+1000
+-1
+
+    XXXX           
+    X  XXXXXXXXXXX 
+    X    V   V V X 
+    X VX V X  V  X 
+    X  V V  X    X 
+  XXX VX X  XXXX X 
+  XSXV V V  XX   X 
+  X    V XVX   X X 
+  X   V    V V V X 
+   XXXX  XXXXXXXXX 
+    X
+@

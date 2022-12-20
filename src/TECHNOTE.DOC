@@ -1,0 +1,304 @@
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º                     B O U L D E R    D A S H                                º
+º                                                                             º
+º                      Version 1.0à Sep. 1994                                 º
+º                   Programmierung: Hilmar Buchta                             º
+ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+º                                                                             º
+º                        TECHNISCHE INFORMATIONEN                             º
+º  Die folgende Programmdokumentation, sowie einige technische Informationen  º
+º  habe ich aus Grnden der šbersichtlichkeit nicht direkt im Quelltext abge- º
+º  legt.                                                                      º
+º                                                                             º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Abschnitt 1  :   Dateien und šbersetzung                                   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+global   .pas        UNIT: Globale Definitionen, die viele Units ben”tigen
+
+bash     .pas        Hauptprogramm
+vga256   .pas        UNIT: Grafikfunktionen
+resunit  .pas        UNIT: Lesen von Ressourcen aus bash.res
+getkey   .pas        UNIT: Tastaturfunktionen
+joystick .pas        UNIT: Joystickfunktionen
+
+packres  .pas        Programm zum Erzeugen der Ressourcen-Datei
+resfile  .pas        UNIT: Lesen von Ressourcen aus einzelnen Dateien
+
+technote .doc        Diese Datei
+readme   .doc        Anleitung und History
+
+sowie diverse .pcx, .fnt, .lev - Dateien im Verzeichnis .\res
+Der Dateiname besteht nur aus einer Zahl, z.B.
+     1.pcx, 2.pcx, 5.pcx
+     1.fnt
+     1.lev, 2.lev, 3.lev
+Der Grund hierfr ergibt sich aus Abschnitt 2.
+
+
+
+šbersetzung:
+-----------
+
+bash.pas kann direkt "gebuildet" werden (F9 in der GUI). Das Programm
+packres.pas kann direkt gestartet werden. Es erzeugt aus dem im
+Unterverzeichnis ".\res" befindlichen .pcx, .fnt und .lev - Dateien die
+Datei "bash.res" im aktuellen Verzeichnis.
+
+Ausgeliefert werden dann nur die folgenden Dateien:
+
+bash     .exe       (entstanden aus bash.pas und den Units)
+bash     .res       (von packres.pas erzeugt)
+readme   .doc
+
+
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Abschnitt 2  :  Verwaltung von Ressourcen                                  ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+S„mtliche Ressourcen werden in der Datei bash.res aufbewahrt. Das
+Zusammenfgen zu dieser Datei erledigt das Hilfsprogramm packres.pas (mit
+resfile.pas als Unit)
+
+packres erwartet die Ressourcen in einem Unterverzeichnis names "res" des
+aktuellen Verzeichnisses, und zwar:
+
+1.pcx bis 999.pcx       Bitmaps
+1.pal bis 999.pal       Paletten
+1.lev bis 999.lev       Level
+
+Der Dateiname dient als sog. Handle, d.h. die Datei 17.pcx wird als
+Bitmap mit Handle 17 abgespeichert. Dies ist insofern wichtig, als das
+sp„ter das Lesen dieses Bitmaps anhand seines Handles erfolgt. Die Handles
+brauchen nicht zusammenh„ngend zu sein, d.h. die Verwendung der folgenden
+Bitmaps ist zul„ssig
+
+ 1.pcx, 19.pcx, 200.pcx
+
+Allerdings fhrt dann der Versuch, das Bitmap mit Handle 2 zu lesen, zu
+einem Fehler.
+
+Die Formate im einzelnen:
+
+
+ Bitmaps
+ -------
+Bitmaps werden als 256 Farben .pcx Dateien gespeichert; die
+Farbpaletteninformation wird allerdings NICHT bercksichtigt. Diese muá also
+ggf. als Palettenressource aufgenommen werden.
+
+ Paletten
+ --------
+Paletten sind ebenfalls 256 Farben .pcx Dateien (die in .pal Dateien
+umbenannt wurden), von denen jedoch nur die Paletteninformation
+bercksichtigt wird.
+
+ Level
+ -----
+Level werden als ASCII Dateien gespeichert. Die Leveldatei besitzt Bl”cke
+der Form
+
+        Spielname
+        Anzahl ben”tigter Diamanten
+        Spielfelddaten
+        Endmarkierung (#)
+
+Nachfolgend ein dokumentiertes
+Beispiel
+
+ Beispieldatei               Erl„uterungen
+
+Level 1                ³   Name des ersten Spiels
+1                      ³   Anzahl ben”tigter Diamanten (-1 fr alle)
+xxxxxxxxxxxx           ³
+xS........Ex           ³
+x.......xxxx           ³   Spielfelddaten
+x......*x,,,           ³
+xxxxxxxxx,,,           ³
+#                      ³  <--- ENDMARKIERUNG (WICHTIG)
+Level 2                ³   Name des zweiten Spiels
+3                      ³   Ben”tigte Diamanten
+xxxxxxxxxxxxxxx        ³
+x......o**o...x        ³
+x..S...oooo...x        ³
+x.............x        ³   Spielfelddaten
+x..*..........x        ³
+x.............x        ³
+x.........E...x        ³
+xxxxxxxxxxxxxxx        ³
+#                      ³  <--- nicht vergessen !!!!
+
+
+Hierbei bedeutet:
+
+ x    undurchl„ssige Wand
+ .    Fllmaterial (wird durch Spielfigur gel”scht)
+ S    Startposition der Spielfigur
+ E    Ziel (mehrere m”glich)
+ o    Stein
+ *    Diamant
+ 1-4  Monster (in Richtung 1=rechts, 2=unten, 3=links, 4=oben laufend)
+      explodiert, wenn es von einem Stein getroffen wird
+ 5-8  Monster (in Richtung 1=rechts...), wird zu Diamanten, wenn es von
+      einem Stein getroffen wird
+ =    Wandler (macht Steine zu Diamanten)
+ ,    Hintergrund (zum Auffllen des Spielfeldes auf Rechteckgestalt, was
+      zwar nicht n”tig ist, aber sch”ner aussieht)
+
+
+packres fgt diese Ressourcen zu einer Datei namens bash.res zusammen.
+Diese Datei hat dann folgendes Format:
+
+Zun„chst kommt ein Header:
+
+1. 00 f7 81 11 f8
+   5 Byte langer Vorspann, anhand dessen die Datei identifiziert wird
+2. ##
+   Byte: Versionsnummer (00 fr Vorabversion, 01 fr erste Vollversion)
+3. ## ##
+   Wort: L„nge des Headers (d.h. erste fseek-Position nach dem Header).
+4. Beliebig viele Bl”cke der Form
+   00 00 ## ## ## ##       Kennzeichnung des Blockbeginns:
+
+   Hierbei bedeutet
+    00 00 00 00         Headerende
+    00 00 00 01         Block von Bitmap-Ressourcen
+    00 00 00 02         Block von Paletten-Ressourcen
+    00 00 00 03         Block von Level-Ressourcen
+
+ x1 x1 y1 y1 y1 y1 s1 s1 s1 s1   hier ist x ein Handle, y die fseek Position
+ x2 x2 y2 y2 y2 y2 s2 s2 s2 s2   innerhalb dieser Datei, an der die zug.
+      ...                        Ressource tats„chlich steht. Das Handle 0 ist
+ xn xn yn yn yn yn sn sn sn sn   nicht zul„ssig; y=0 ist unm”glich
+                                 s ist die L„nge der jeweiligen Ressource
+
+
+  Ein Block endet, falls ein neuer beginnt oder falls ein Headerende
+  (6 Nullbytes) gelesen wird.
+
+  Nach dem Header kommen die tats„chlichen Ressourcen-Daten in dem weiter
+  unten beschriebenen Format.
+
+Bespiel:
+
+abs Byte Pos  ³      Eintrag         ³               Kommentar
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     0        ³   00 f7 81 11 f8 00  ³  Erkennungsmerkmal
+     6        ³   38 00              ³  Headerl„nge
+     8        ³   00 00 00 00 00 01  ³  1. Block enth„lt Bitmap-Ressourcen
+     e        ³   00 01              ³  1. Bitmap mit Handle 1 ab Position
+    14        ³   f0 01 00 00        ³       der L„nge 1f0h=496 Byte
+    18        ³   00 05              ³  2. Bitmap hat Handle 5 und beginnt
+    1e        ³   00 03 00 00        ³       bei       (L„nge=768 Byte)
+    22        ³   00 00 00 00 00 03  ³  2. Block enth„lt Level-Ressourcen
+    28        ³   00 01              ³  Level mit Handle 1
+    2e        ³   00 02 00 00        ³   L„nge 512 Byte
+    32        ³   00 00 00 00 00 00  ³ Headerende
+
+    38        ³   ## ## ## ## ## ... ³ Daten fr Bitmap 1
+   228        ³   ## ## ## ## ## ... ³ Daten fr Bitmap 2
+   528        ³   ## ## ## ## ## ... ³ Daten fr Level 1
+   727            letztes Byte in der Datei
+
+Die einzelnen Ressourcen werden dabei wie folgt gespeichert:
+
+Bitmaps    : Nicht gepackt und verschlsselt
+Paletten   : Nicht gepackt und nicht verschlsselt
+Level      : RLE gepackt und verschlsselt
+
+Die Verschlsselung wird mit Hilfe der Routinen cifferwrite(...) und
+cifferread(...) in packres.pas bzw. resunit.pas behandelt und besteht
+lediglich aus dem Ver-XOdern mit einem festen String (ciffer_string in
+global.pas)
+
+Der Zugriff auf die Ressourcen-Datei wird ber die Unit resunit.pas
+durchgefhrt.
+
+Zun„chst muá die Ressourcen-Datei initialisiert werden:
+
+procedure initressource(resname:string);
+
+Hierbei ist resname der Name der Ressourcen-Datei.
+Danach kann mit den Routinen
+   p:=load_bitmap(id);
+   p:=load_palette(id);
+   p:=load_level(id);
+auf die entsprechenden Eintr„ge in der Ressourcen-Datei zurckgegriffen
+werden. id ist jeweils die Handlenummer. p muá vom Typ pbuffer sein und
+braucht vorher keinen Speicherplazu zugewiesen bekommen.
+Falls der Laden der Ressource fehlschl„gt (d.h. zu dem geforderten Handle
+existiert keine Ressource), so liefern diese Funktionen den Wert nil.
+Andernfalls wird gengend Speicher reserviert und ein Zeiger darauf in
+der Variablen p zurckgeliefert.
+
+Im oberen Beispiel k”nnte man also mit
+   bitm:=load_bitmap(1);
+das Bitmap 1 in die Variable bitm laden und mit
+   lev:=load_level(1);
+den einzigen definierten Level nach lev laden
+
+Der Rckgabewert von load_bitmap(2) liefert jedoch nil, weil kein Bitmap
+den Handle 2 besitzt.
+
+Nach dem Zugriff auf die Ressourcen-Datei (d.h. entweder am Programmende
+oder nachdem alle Ressourcen geladen wurden) muá noch die Prozedur
+ close_ressource;
+aufgerufen werden.
+
+Prinzipiell sind beliebige Arten von Ressourcen in beliebigen Formaten
+denkbar - hier beschr„nke ich mich jedoch auf ganz bestimmte Ressourcen
+(fr andere Programme ist jedoch hier noch sehr viel Spielraum...)
+
+Das Programm packres hingegen verwendet die Unit resfile.pas, um auf
+Ressourcen zuzugreifen. Diese enth„lt die folgenden Funktionen (gleich mit
+Beispiel)
+
+ bit:=fload_bitmap(1)   l„dt die Datei      res\1.pcx
+ pal:=fload_pal(1)      l„dt                res\1.pal
+ lev:=fload_level(1)    l„dt                res\1.lev
+
+
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Abschnitt 3  :  Softscrolling                                              ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Der Bildschirm fr BASH hat einen virtuelle Aufl”sung von 328x200,
+von denen 320x200 dargestellt werden. Die vier planes (=256K) ergeben
+parallel das Bild, d.h. die Pixel von (0,0) bis (3,0) liegen auf
+unterschiedlichen Planes, wie es das folgende Bild zeigt:
+
+           ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+PLANE 4    ³4 8            ³                 Bildschirm
+          ÚÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³            ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+PLANE 3   ³3 7            ³³            ³1 2 3 4 5 6 7 8         ³
+         ÚÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ÃÙ            ³                        ³
+PLANE 2  ³2 6            ³³             ³                        ³
+        ÚÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ÃÙ             ³                        ³
+PLANE 1 ³1 5            ³³              ³                        ³
+        ³               ÃÙ              ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+        ³               ³
+        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³  Abschnitt ?  :  History                                                    ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+21.09.1994  : Beginn der Arbeit an den Grafikroutinen
+25.10.      : Erste spielbare Version 0.1
+14.11.      : Zwei Typen von Monstern, Wandler, funktionierende
+              Tastaturroutine,...
+23.11.      : Levelauswahl, Spielstandspeicherung, Joystickuntersttzung
+              Version 1.0à
